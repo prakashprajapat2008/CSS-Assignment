@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .main {
+      width: 98vw;
+      height: 100%;
+      /* border: 2px solid red; */
+    }
+
+    .nav {
+      width: 98vw;
+      height: 70px;
+      /* border: 2px solid; */
+      display: flex;
+      align-items: center;
+    }
+
+    .p1 {
+      width: 330px;
+      height: 50px;
+      background-image: url(kw-logo.png);
+      background-size: cover;
+      margin-left: 40px;
+    }
+
+    .p2 {
+      width: 70px;
+      height: 60px;
+      background-image: url(cart-icon.png);
+      background-size: cover;
+      margin-left: 900px;
+    }
+
+    .mid {
+      width: 98vw;
+      height: 400px;
+      background-image: url(kw-background.png);
+      background-size: cover;
+      display: flex;
+
+    }
+
+    .p4 {
+      margin-left: 40px;
+      margin-top: 20px;
+      color: white;
+      font-size: x-large;
+    }
+
+    .p5 {
+      margin-left: 40px;
+      margin-top: 100px;
+    }
+
+    .p18 {
+      margin-left: 40px;
+    }
+
+    .p50 {
+      margin-left: 40px;
+    }
+
+    .mid1 {
+      width: 98vw;
+      height: 400px;
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .mid2 {
+      width: 98vw;
+      height: 400px;
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .mid3 {
+      width: 98vw;
+      height: 400px;
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+
+
+    .p6 {
+      width: 200px;
+      height: 300px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+    }
+
+    .p7 {
+      width: 200px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+      background-size: cover;
+      background-image: url(book1.png);
+    }
+
+    .p8 {
+      width: 200px;
+      height: 100px;
+      /* border: 2px solid; */
+
+    }
+
+
+
+    .p9 {
+      margin-top: -25px;
+      font-size: x-large;
+    }
+
+    .p10 {
+      margin-top: -20px;
+      color: rgba(0, 0, 0, 0.582);
+    }
+
+    .p11 {
+      width: 50px;
+      margin-top: 25px;
+    }
+
+    .p12 {
+      width: 50px;
+      height: 20px;
+      margin-left: 146px;
+      margin-top: -20px;
+      background-color: #6196FF;
+      border-radius: 7%;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+
+    .p13 {
+      width: 200px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+      background-image: url(book2.png);
+    }
+
+    .p14 {
+      width: 200px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+      background-image: url(book3.png);
+    }
+
+    .p15 {
+      width: 200px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+      background-image: url(book4.png);
+    }
+
+    .p16 {
+      width: 200px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+      background-image: url(book5.png);
+    }
+
+    .p17 {
+      width: 200px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+      background-image: url(book6.png);
+    }
+
+    .p19 {
+      width: 250px;
+      height: 300px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+    }
+
+    .p20 {
+      width: 250px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+          background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(dart-board.png);
+    }
+
+    .p21 {
+      width: 250px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+          background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(connect-four.png);
+    }
+
+    .p22 {
+      width: 250px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+          background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(jenga.png);
+    }
+
+    .p23 {
+      width: 250px;
+      height: 200px;
+      /* border: 2px solid; */
+      border-radius: 5%;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(monopoly.png);
+    }
+
+    .p51 {
+      width: 250px;
+      height: 200px;
+      border: 2px solid white;
+      border-radius: 5%;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(bookmarks.png);
+    }
+
+    .p52 {
+      width: 250px;
+      height: 200px;
+      border: 2px solid white;
+      border-radius: 5%;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE3lQj7oBdop4Q2Eu8EiFfV_g8IGSHbB-_ZaaaUWAaCglDWbza);
+    }
+
+    .p53 {
+      width: 250px;
+      height: 200px;
+      border: 2px solid white;
+      border-radius: 5%;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(stuffed-toy.png);
+    }
+
+    .p54 {
+      width: 250px;
+      height: 200px;
+      border: 2px solid white;
+      border-radius: 5%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(dream-catcher.png);
+    }
+
+    @media screen and (max-width:800px){
+     .mid1 , .mid2 , .mid3{
+      justify-content: space-around;
+      gap: 80px;
+     }
+
+     .main{
+      width: 100%;
+     }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="nav">
+
+      <div class="p1"></div>
+      <div class="p2"></div>
+      <div class="p3">
+        <p>Cart items(0)</p>
+      </div>
+
+    </div>
+
+    <!-- ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp -->
+
+
+    <div class="mid">
+      <div class="p4">
+        <h1>Shop.</h1>
+        <h1>Have Fun.</h1>
+        <h1>Repeat.</h1>
+        <h3>#NewAndNow</h3>
+      </div>
+    </div>
+
+    <div class="p5">
+      <h3>Discover New Books</h3>
+    </div>
+
+
+    <!-- ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp -->
+
+    <div class="mid1">
+      <div class="p6">
+        <div class="p7"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was </p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p6">
+        <div class="p13"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p6">
+        <div class="p14"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was </p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p6">
+        <div class="p15"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p6">
+        <div class="p16"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p6">
+        <div class="p17"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was </p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp -->
+
+
+    <div class="p18">
+      <h3>Discover New Games</h3>
+    </div>
+
+
+    <div class="mid2">
+      <div class="p19">
+        <div class="p20"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p19">
+        <div class="p21"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p19">
+        <div class="p22"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p19">
+        <div class="p23"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp -->
+
+
+
+    <div class="p50">
+      <h3>Handmande With love</h3>
+    </div>
+
+
+    <div class="mid3">
+      <div class="p19">
+        <div class="p51"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p19">
+        <div class="p52"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p19">
+        <div class="p53"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+      <div class="p19">
+        <div class="p54"></div>
+        <div class="p8">
+          <div class="p9">
+            <p>This was our pact</p>
+          </div>
+          <div class="p10">
+            <p1>Ryan Anderws</p1>
+          </div>
+          <div class="p11">$7.49</div>
+          <div class="p12">add <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z"
+                  fill="#fcfcfd"></path>
+                <path
+                  d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z"
+                  fill="#fcfcfd"></path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>
